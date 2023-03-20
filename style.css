@@ -9,7 +9,12 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-.img{
+      
+    /* ================== */
+    /* home page section  */
+    /* ================== */
+
+.imgBackground{
     width: 99%;
     margin: auto;
     height: 100vh;
@@ -18,31 +23,65 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
-    -moz-box-shadow:    0px 0px 5px 0px #282a2d;
-    -webkit-box-shadow: 0px 0px 5px 0px #282a2d;
+    
+    /* -moz-box-shadow:    0px 0px 5px 0px #282a2d;
+    -webkit-box-shadow: 0px 0px 5px 0px #282a2d; */
 }
-.list{
+.imgBackground .listNavbar-Items{
     height: 70px;
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    position: fixed;
+    z-index: 100;
+    /* background: transparent; */
+    
 }
-.nav{
-    display: flex;
+
+/* .listNavbar-Items.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+} */
+
+.listNavbar-Items.bg-white{
+    background: #fff;
+    border-bottom: 2px solid black;
 }
-.img .list .nav p{
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 16px;
-    font-weight: bold;
-}
-.logo{
+
+.logoItem{
     font-weight: bold;
     font-size: 30px;
 }
-.talk{
+.logoItem:hover{
+    cursor: pointer;
+}
+.imgBackground .middleItems{
+    display: flex;
+}
+.imgBackground .listNavbar-Items .middleItems li{
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.imgBackground .listNavbar-Items .middleItems li a{
+    text-decoration: none;
+    color: #282a2d;
+    transition: all 0.1s;
+    
+}
+.imgBackground .listNavbar-Items .middleItems li a:hover{
+    border-bottom: #0e0ee7 4px solid;
+    color: black
+    
+    
+}
+
+.imgBackground .listNavbar-Items .talkItem{
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
@@ -52,11 +91,23 @@ body{
     border: none;
     font-size: 16px;
     background-color: rgb(41, 41, 201);
+    transition: all 0.1s;
 }
+.imgBackground .listNavbar-Items .talkItem:hover{
+    background: #282a2d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ---------------------- */
+     /* middle Items */
+/* ---------------------- */
+
 .box{
+    
     margin-left: 50%;
     width: 50%;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -88,7 +139,7 @@ body{
     
     width: 96%;
     position: relative;
-    top: 80px;
+    top: 150px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -244,6 +295,7 @@ body{
 }
 /* ======Footer======= */
 .footer{
+    overflow: hidden;
     width: 99%;
     height: 100vh;
     margin: auto;
