@@ -217,11 +217,10 @@ body{
 .ourService .our i{
     color: rgb(41, 41, 201);
 }
-.card {
+.card{
     width: 99%;
     margin: auto;
     border-radius: 40px;
-    background-image: url(img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,22 +228,35 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    -moz-box-shadow:    0px 0px 5px 0px #282a2d;
-    -webkit-box-shadow: 0px 0px 5px 0px #282a2d;
-
+    background-color: #E6E6FA;
+    -moz-box-shadow:    0px 0px 2px 0px #282a2d;
+    -webkit-box-shadow: 0px 0px 2px 0px #282a2d;
+    transition: all 1s;
+}
+.card:hover{
+    background-image: url(img/bg.jpg);
+    list-style: disc;
 }
 .softwareDev  ul li{
+    list-style: none;
     margin-left: 100px;
     font-size: 50px;
 }
-.arrow img{
-    width: 50px;
-    
+.softwareDev ul li:hover{
+    list-style: disc;
+    color: #0e0ee7;
 }
+
 .arrow{
-    padding: 10px;
-    border-radius: 10px;
-    
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s; 
+}
+.arrow:hover{
+    background-image: url(img/rightArrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* ----------------------------- */
  /*  our work */
